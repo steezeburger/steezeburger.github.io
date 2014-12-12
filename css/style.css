@@ -316,6 +316,7 @@ header {
 }
 
 h1.logo {
+  color: grey;
   display: inline;
   float: left;
   margin-left: 20px;
