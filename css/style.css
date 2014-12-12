@@ -1,6 +1,9 @@
 /* HTML5 Boilerplate
  * ==|== normalize.css ==========================================================
  */
+
+font-family: 'Roboto Condensed', sans-serif;
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -33,7 +36,7 @@ body {
 }
 
 body, button, input, select, textarea {
-  font-family: sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #222;
 }
 
@@ -108,8 +111,8 @@ mark {
 }
 
 pre, code, kbd, samp {
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  font-family: 'Roboto Condensed', sans-serif;
+  _font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
 }
 
@@ -303,5 +306,5 @@ td {
 }
 
 body {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
