@@ -316,8 +316,8 @@ header {
 }
 
 h1.logo {
-  color: grey;
-  display: inline;
+  color: gray;
+  display: block;
   float: left;
   margin-left: 20px;
 }
@@ -343,10 +343,19 @@ h1.logo {
   text-decoration: none;margin
 }
 
-nav {
-  padding-top: 150px;
-  color: #999;
-  font-size: 2em;
+  nav {
+    padding-top: 150px;
+    color: #999;
+    font-size: 2em;
+  }
+
+@media only screen and (max-width: 400px ) {
+  nav {
+    margin: auto;
+    padding-top: 150px;
+    color: #999;
+    font-size: 1.25em;
+  }
 }
 
 div[role=main] {
