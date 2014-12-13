@@ -315,39 +315,46 @@ header {
   background-color: black;
 }
 
-h1.logo {
-  color: gray;
-  display: block;
-  float: left;
-  margin-left: 20px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: dimgray;
+/*  text-shadow: 1px 1px rgb(255,255,255, 1);*/
 }
 
-.menu {
+h1.logo {
+  display: block;
+  float: left;
+  margin-left: 40px;
+}
+
+nav ul.menu {
   float: right;
 }
 
-.menu li {
+nav li {
   display: inline;
 }
 
-.menu li + li {
+nav li + li {
   margin-left: 35px;
 }
 
-.menu li:last-of-type {
+nav li:last-of-type {
   margin-right: 20px;
 }
 
-.menu li a {
+nav li a {
   color: #999;
-  text-decoration: none;margin
+  text-decoration: none;
 }
 
-  nav {
-    padding-top: 150px;
-    color: #999;
-    font-size: 2em;
-  }
+
+nav {
+  padding-top: 150px;
+  color: #999;
+  font-size: 2em;
+}
 
 @media only screen and (max-width: 400px ) {
   nav {
@@ -358,13 +365,43 @@ h1.logo {
   }
 }
 
-div[role=main] {
+main {
   float: left;
   padding-bottom: 100%;
   width: 100%;
   background-color: lightgrey;
 }
 
-div[role=main] p {
-  text-align: center;
+main h1 {
+  padding-left: 20px;
+}
+
+main p {
+  text-align: left;
+  padding-left: 35px;
+  color: black;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+main a:hover{
+  color: #999;
+}
+
+main img {
+  padding-left: 35px;
+}
+
+.email-slide span {
+  display: none;
+}
+
+.email-slide:hover span {
+  color: dimgray;
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
