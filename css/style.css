@@ -305,6 +305,13 @@ td {
   visibility: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: dimgray;
+/*  text-shadow: 1px 1px rgb(255,255,255, 1);*/
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -313,61 +320,80 @@ header {
   width: 100%;
   height: 200px;
   background-color: black;
+  position: fixed;
+  z-index: 1000;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  color: dimgray;
-/*  text-shadow: 1px 1px rgb(255,255,255, 1);*/
-}
 
-h1.logo {
-  display: block;
+header h1.logo {
+  display: inline-block;
   float: left;
   margin-left: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-nav ul.menu {
+header nav ul.menu {
   float: right;
 }
 
-nav li {
-  display: inline;
+header nav li {
+  display: inline-block;
 }
 
-nav li + li {
+header nav li + li {
   margin-left: 35px;
 }
 
-nav li:last-of-type {
+header nav li:last-of-type {
   margin-right: 20px;
 }
 
-nav li a {
+header nav li a {
+  color: #999;
+  text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header nav li a:visited {
   color: #999;
   text-decoration: none;
 }
 
-nav li a:visited {
-  color: #999;
-  text-decoration: none;
-}
-
-nav li a:hover {
+header nav li a:hover {
   color: white;
   text-decoration: none;
 }
 
 
-nav {
+header nav {
+  display: inline-block;
+  float: right;
   padding-top: 150px;
   color: #999;
   font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
 }
 
 @media only screen and (max-width: 400px ) {
-  nav {
+  header nav {
     margin: auto;
     padding-top: 150px;
     color: #999;
@@ -375,7 +401,28 @@ nav {
   }
 }
 
+header.smaller {
+  height:75px;
+}
+
+headers.smaller h1.logo {
+  width: ;
+  height: ;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+header.smaller nav a {
+    line-height: 75px;
+}
+
+header.smaller nav {
+  padding-top: 0px;
+}
+
 main {
+  padding-top: 200px;
+  display: block;
   float: left;
   padding-bottom: 100%;
   width: 100%;
