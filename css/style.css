@@ -349,6 +349,16 @@ nav li a {
   text-decoration: none;
 }
 
+nav li a:visited {
+  color: #999;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 
 nav {
   padding-top: 150px;
