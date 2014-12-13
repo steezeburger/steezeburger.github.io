@@ -389,6 +389,7 @@ main h1 {
 main p {
   text-align: left;
   padding-left: 35px;
+  padding-right: 20px;
   color: black;
 }
 
