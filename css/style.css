@@ -404,6 +404,11 @@ header nav {
     color: #999;
     font-size: 1em;
   }
+
+  header nav li + li {
+    margin-left: 20px;
+  }
+
 }
 
 header.smaller {
