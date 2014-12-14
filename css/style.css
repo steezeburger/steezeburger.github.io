@@ -311,6 +311,10 @@ h1, h2, h3, h4, h5, h6 {
   color: dimgray;
 }
 
+ul.no-bullets {
+  list-style-type: none;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -463,4 +467,8 @@ main img {
   padding-left: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.image-grid {
+  float:left
 }
