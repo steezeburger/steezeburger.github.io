@@ -470,5 +470,6 @@ main img {
 }
 
 .image-grid {
-  float:left
+  float:left;
+  padding-top:20px;
 }
