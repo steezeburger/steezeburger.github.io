@@ -476,5 +476,17 @@ main img {
 
 .image-grid {
   float:left;
-  padding-top:20px;
+  padding-top:10px;
+}
+
+.portfolio {
+  max-width: 700px;
+}
+.portfolio h2 {
+  padding-left: 30px;
+}
+
+.portfolio-container {
+  float: left;
+  display: block;
 }
