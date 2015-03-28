@@ -88,8 +88,11 @@ section {
   height:100%;
   background-color: #FFF;
   .description {
+    h3 {
+      text-align: center;
+    }
     color: #333;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     font-family: $helvetica;
     .img {
@@ -129,7 +132,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     }
   }
@@ -172,4 +175,13 @@ nav {
       }
     }
   }
+}
+
+.footer {
+  height: 100vh;
+  color: #FFF;
+  background-image: url("../images/tight.jpg");
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0 auto;
 }
