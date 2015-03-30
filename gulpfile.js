@@ -7,6 +7,8 @@ var jade = require('gulp-jade');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
+var browserSync = require('browser-sync');
+
 gulp.task('css', function() {
   gulp.src('source/sass/sass.scss')
     .pipe(sass())
@@ -14,12 +16,14 @@ gulp.task('css', function() {
     .pipe(minifyCSS())
     .pipe(rename('style.css'))
     .pipe(gulp.dest('public/css'))
+    .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('html', function() {
   gulp.src('source/jade/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('public/views'))
+    .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('js', function() {
@@ -38,4 +42,15 @@ gulp.task('watch', function() {
   gulp.watch('source/jade/*.jade', ['html']);
 });
 
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: "./"
+    }
+  });
+});
+
 gulp.task('default', ['css', 'html', 'js']);
+
+gulp.task('start', ['browser-sync', 'watch']);
+

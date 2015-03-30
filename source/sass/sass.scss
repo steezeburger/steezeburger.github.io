@@ -15,6 +15,7 @@
 @import "materialize/components/global";
 @import "materialize/components/typography";
 @import "materialize/components/normalize";
+@import "materialize/components/buttons";
 
 
 @font-face {
@@ -53,8 +54,15 @@ section {
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
   margin: 0 auto;
+  position: relative;
   .text-overlay{
-    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-50%);
+
     span {
       font-size: 10vw;
     }
@@ -95,8 +103,8 @@ section {
     text-align: left;
     margin: 0 auto;
     font-family: $helvetica;
-    .img {
-      width: 60%;
+    img {
+      margin: 10 auto;
     }
     .centered {
       overflow: hidden;
@@ -114,7 +122,8 @@ section {
     }
     a {
       &:link {
-        color: #333;
+        color: #999;
+        text-decoration: underline;
       }
       &:visited {
         color: #111;    
@@ -129,10 +138,12 @@ section {
     .category {
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    right: 50%;
+//    transform: translateX(-50%);
+//    transform: translateY(-50%);
+    transform: translate(-50%, -100%);
     color: #FFF;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     }
   }
@@ -177,10 +188,19 @@ nav {
   }
 }
 
+.hamburger.fixed-action-btn {
+  top: 2.5%;
+  right: 2.5%;
+  .btn-floating {
+    background-color: #014A5D;
+    box-shadow: none;
+  }
+}
+
 .footer {
-  height: 100vh;
+  height: 50vh;
   color: #FFF;
-  background-image: url("../images/tight.jpg");
+  background-image: url("../images/okc_bw.jpg");
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
   margin: 0 auto;

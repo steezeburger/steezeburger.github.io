@@ -48,12 +48,18 @@
     <ul>
       <li><a href="#about">About</a>
       </li>
-      <li><a href="projects">Projects</a>
+      <li><a href="#projects">Projects</a>
       </li>
-      <li><a href="contact">Contact</a>
+      <li><a href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
+
+  <div class="fixed-action-btn hide-on-large-only hamburger">
+    <a href="" class="btn-floating btn-large ">
+      &#9776;
+    </a>
+  </div>
 
   <div class="row">
     <section class="main">
@@ -65,7 +71,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="about">
       <div class="primary about col s12 m12 l6">
         <div class="category">
           <h1>About</h1>
@@ -87,7 +93,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <div class="primary projects col s12 m12 l6">
         <div class="category">
           <h1>Projects</h1>
@@ -101,17 +107,17 @@
           <p>
             Check out the code on <a href="https://github.com/steezeburger/conway">Github</a>
           </p>
-          <ul class="rig">
-            <li>
-              <a href="http://jessesnyder.me/conway" target="_blank"><img src="public/images/conway_screenshot.png" alt="Conway's Game of Life">
+<!--          <ul class="rig">-->
+<!--            <li>-->
+              <a href="http://jessesnyder.me/conway" target="_blank"><img class="centered" src="public/images/conway_screenshot.png" alt="Conway's Game of Life">
               </a>
-            </li>
-          </ul>
+<!--            </li>-->
+<!--          </ul>-->
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       <div class="primary contact col s12 m12 l6">
         <div class="category">
           <h1>Contact</h1>
@@ -120,6 +126,7 @@
       <div class="secondary col s12 m12 l6">
         <div class="description">
           <h3>Jesse Snyder</h3>
+          <div class="centered"><a href="">Resume</a></div>
           <div class="centered">
             <a class="icon" href="mailto:jessetsnyder@gmail.com" target="_blank"><img src="public/images/icons/mail84.png" />
             </a>

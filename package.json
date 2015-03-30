@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/steezeburger/steezeburger.github.io",
   "devDependencies": {
+    "browser-sync": "^2.4.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-jade": "^1.0.0",
