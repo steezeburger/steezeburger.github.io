@@ -56,20 +56,21 @@
   </nav>
 
   <div class="fixed-action-btn hide-on-large-only hamburger">
-    <a href="" class="btn-floating btn-large ">
+    <button class="btn-floating btn-large ">
       &#9776;
-    </a>
+    </button>
   </div>
 
-  <div class="menu-overlay">
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="menu-overlay hide-on-large-only closed">
+    <ul>
+      <li><a href="#about">About</a>
+      </li>
+      <li><a href="#projects">Projects</a>
+      </li>
+      <li><a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
   <div class="row">
     <section class="main">
@@ -117,12 +118,8 @@
           <p>
             Check out the code on <a href="https://github.com/steezeburger/conway">Github</a>
           </p>
-<!--          <ul class="rig">-->
-<!--            <li>-->
-              <a href="http://jessesnyder.me/conway" target="_blank"><img class="centered" src="public/images/conway_screenshot.png" alt="Conway's Game of Life">
-              </a>
-<!--            </li>-->
-<!--          </ul>-->
+          <a href="http://jessesnyder.me/conway" target="_blank"><img class="centered" src="public/images/conway_screenshot.png" alt="Conway's Game of Life">
+          </a>
         </div>
       </div>
     </section>
@@ -136,7 +133,8 @@
       <div class="secondary col s12 m12 l6">
         <div class="description">
           <h3>Jesse Snyder</h3>
-          <div class="centered"><a href="/public/jsnyder_resume.pdf" target="_blank">Resume</a></div>
+          <div class="centered"><a href="/public/jsnyder_resume.pdf" target="_blank">Resume</a>
+          </div>
           <div class="centered">
             <a class="icon" href="mailto:jessetsnyder@gmail.com" target="_blank"><img src="public/images/icons/mail84.png" />
             </a>
