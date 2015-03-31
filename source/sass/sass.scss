@@ -47,6 +47,70 @@ section {
   height: 100vh;
 }
 
+nav.large {
+  z-index: 1000;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline;
+      &:not(:last-child):after {
+        content: "/";
+        font-size: 2em;
+        font-weight: 800;
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      a {
+        font-size: 2em;
+        font-weight: 800;
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px #000000;
+      }
+    }
+  }
+}
+
+.hamburger.fixed-action-btn {
+  top: 2.5%;
+  right: 2.5%;
+  .btn-floating {
+    background-color: #014A5D;
+    box-shadow: none;
+  }
+}
+
+.menu-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    ul > li {
+      a {
+        font-size: 30px;
+        color: white;
+      }
+      + li {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
 .main {
   height: 100vh;
   color: #FFF;
@@ -158,44 +222,6 @@ section {
 .contact { background-color: #B20152; }
 
 
-nav {
-  z-index: 1000;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  ul {
-    list-style-type: none;
-    padding: 0;
-    li {
-      display: inline;
-      &:not(:last-child):after {
-        content: "/";
-        font-size: 2em;
-        font-weight: 800;
-        color: #FFF;
-        text-decoration: none;
-        text-shadow: 2px 2px 4px #000000;
-      }
-      a {
-        font-size: 2em;
-        font-weight: 800;
-        color: #FFF;
-        text-decoration: none;
-        text-shadow: 2px 2px 4px #000000;
-      }
-    }
-  }
-}
-
-.hamburger.fixed-action-btn {
-  top: 2.5%;
-  right: 2.5%;
-  .btn-floating {
-    background-color: #014A5D;
-    box-shadow: none;
-  }
-}
 
 .footer {
   height: 50vh;
