@@ -19,6 +19,8 @@ $(document).ready(function () {
     $('nav.menu-overlay').toggle();
   });
 
+  // Remove overlay on link click
+  // TODO add close button
   $('nav.menu-overlay>ul>li>a').click(function() {
     $('nav.menu-overlay').toggle();
   });
