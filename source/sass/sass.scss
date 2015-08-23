@@ -1,5 +1,5 @@
 @import "photo-grid.css";
-  
+
 @charset "UTF-8";
 
 // Mixins
@@ -74,6 +74,33 @@ nav.large {
         color: #FFF;
         text-decoration: none;
         text-shadow: 2px 2px 4px #000000;
+      }
+    }
+  }
+}
+
+nav.side {
+  z-index: 1000;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline;
+      &:not(:last-child):after {
+        content: "/";
+        font-size: 1.5em;
+        font-weight: 800;
+        color: #FFF;
+        text-decoration: none;
+      }
+      a {
+        font-size: 1.5em;
+        font-weight: 800;
+        color: #FFF;
+        text-decoration: none;
       }
     }
   }
@@ -197,7 +224,7 @@ nav.menu-overlay {
         text-decoration: underline;
       }
       &:visited {
-        color: #111;    
+        color: #111;
       }
     }
   }
