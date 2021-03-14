@@ -1,15 +1,3 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.vi
-*~
-*.sass-cache
-
 # OS or Editor folders
 .DS_Store
 .cache
@@ -18,14 +6,6 @@
 nbproject
 Thumbs.db
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Folders to ignore
 .hg
 .svn
@@ -33,8 +13,5 @@ intermediate
 publish
 .idea
 
-# build script local files
-build/buildinfo.properties
-build/config/buildinfo.properties
-
 node_modules
+.deploy_git
