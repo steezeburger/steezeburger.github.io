@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -411,7 +412,14 @@ code {
   text-decoration: none;
 }
 .post p {
-  word-break: break-all;
+  word-break: break-word;
+}
+.post p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.post ul li {
+  margin-left: 30px;
+  list-style: disc;
 }
 .post-widget {
   float: right;
@@ -702,4 +710,3 @@ code {
 .about img {
   width: 100%;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
