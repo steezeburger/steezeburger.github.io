@@ -6,7 +6,15 @@
 title: steezeburger.com
 subtitle: steezeburger in paradise
 description: writeups about things i make
-keywords: programming, art, software engineer, 3d printing, hard surface modeling, blender, mini figs, miniature figures,
+keywords:
+  - software engineering
+  - computer aided design
+  - blender
+  - cad
+  - learning
+  - mini figs
+  - miniature figures
+  - how to learn
 author: jesse snyder
 language: en
 timezone: ''
