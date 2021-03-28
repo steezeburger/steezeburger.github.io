@@ -1,7 +1,10 @@
 ---
 title: katas
 date: 2021-03-28 05:05:00
-tags: blender, cad, learning
+tags:
+    - blender
+    - cad
+    - learning
 ---
 
 A kata is something borrowed from Japanese martial arts and is something I have seen a lot as a suggestion when learning software development.
