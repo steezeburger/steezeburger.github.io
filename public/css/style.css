@@ -411,14 +411,21 @@ code {
   color: #aaa;
   text-decoration: none;
 }
+.post h2 {
+  margin: 15px 0;
+}
 .post p {
   word-break: break-word;
 }
 .post p:not(:last-child) {
   margin-bottom: 15px;
 }
+.post ul {
+  margin-bottom: 15px;
+}
 .post ul li {
   margin-left: 30px;
+  margin-top: 8px;
   list-style: disc;
 }
 .post-widget {
