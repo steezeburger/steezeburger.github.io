@@ -29,7 +29,7 @@ Figment has some suggestions for how to use it with Clap, but their example did 
 
 ## How?
 
-There are a few Rust crates that support hierarchical configurations. I chose [Figment](https://crates.io/crates/figment) after it was recommended by a coworker. We also need [Clap](https://crates.io/crates/clap) for command line argument parsing and [Serde](https://crates.io/crates/serde) for serialization of these command line arguments so that the argument values will be deserialized into the correct Rust types.
+There are a few Rust crates that support hierarchical configurations. I chose [Figment](https://crates.io/crates/figment) because it was the only layered config crate that could handle values directly from the Serialize type. This was necessary to support command line arguments. We also need [Clap](https://crates.io/crates/clap) for command line argument parsing and [Serde](https://crates.io/crates/serde) for serialization of these command line arguments so that the argument values will be deserialized into the correct Rust types.
 
 Figment actually has a nice little section in the [documentation](https://docs.rs/figment/0.10.8/figment/#for-cli-application-authors) that explains how to use Figment with Clap, but there are a few differences with how they set up their configurations. They chose to load the configurations in a different order than is recommended for hierarchical configurations.
 
