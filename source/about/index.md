@@ -4,6 +4,7 @@ my name is jesse and i like to make stuff.
 
 some of my other sites:
 
+* [https://github.com/steezeburger](https://github.com/steezeburger)
 * [https://siqnastee.com](https://siqnastee.com)
 * [https://mileyvirus.xyz/](https://mileyvirus.xyz/)
 * [https://www.instagram.com/steezeburger/](https://www.instagram.com/steezeburger/)
