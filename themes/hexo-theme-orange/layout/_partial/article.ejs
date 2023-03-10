@@ -27,6 +27,7 @@
     <%- post.content %>
     <% } %>
   </div>
+  <% if (!index && post.__post) { %>
   <script src="https://utteranc.es/client.js"
     repo="steezeburger/steezeburger.github.io"
     issue-term="pathname"
@@ -34,4 +35,5 @@
     crossorigin="anonymous"
     async>
   </script>
+  <% } %>
 </article>
