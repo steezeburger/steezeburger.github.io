@@ -89,7 +89,7 @@ We now run into another issue. If we called the program without command line arg
 
 ## Final Solution
 
-The final solution required adding a separate struct to handle the command line arguments, along with a helper from `Serde` that let's use skip serialization of values if they are `None`.
+The final solution required adding a separate struct to handle the command line arguments, along with a helper from `Serde` that skips serialization of values if they are `None`.
 
 ```rust
 // cli.rs
@@ -98,7 +98,7 @@ use serde::Serialize;
 
 #[derive(Debug, Parser, Serialize)]
 pub(crate) struct Cli {
-    /// The name 
+    /// The name
     #[arg(long = "name")]
     #[serde(skip_serializing_if = "::std::option::Option::is_none")]
     pub(crate) name: Option<String>,
