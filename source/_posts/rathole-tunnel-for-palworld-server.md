@@ -159,14 +159,9 @@ services:
     container_name: palworld-rathole-client
     image: rapiz1/rathole
     command: ["--client", "/app/client.toml"]
-    ports:
-      - 2333:2333  # for rathole communication
-      - 8211/udp  # for palworld communication
-      - 27015/udp  # for steam client communication
+    network_mode: host
     volumes:
       - ./client.toml:/app/client.toml
-    env_file:
-      - .env
 ```
 * Populate `client.toml` - make sure to replace `your.digital.ocean.ip` with the IP of your droplet! And the `default_token` needs to match the `default_token` in your Rathole server's `server.toml`
 ```toml
