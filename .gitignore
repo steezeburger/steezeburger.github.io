@@ -15,3 +15,5 @@ publish
 
 node_modules
 .deploy_git
+
+db.json
