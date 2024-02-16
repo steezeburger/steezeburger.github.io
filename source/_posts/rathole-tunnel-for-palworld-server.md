@@ -164,12 +164,20 @@ services:
       - ./client.toml:/app/client.toml
 ```
 * Populate `client.toml` - make sure to replace `your.digital.ocean.ip` with the IP of your droplet! And the `default_token` needs to match the `default_token` in your Rathole server's `server.toml`
+> NOTE: 2024/2/16 - Added `client.transport` and `client.transport.tcp` sections. This helped A LOT with some users' connection issues. There is some issue with the udp packets not being received correctly and causing the tunnel to terminate, but this setting mostly fixed the issue.
 ```toml
 # client.toml
 [client]
 remote_addr = "your.digital.ocean.ip:2333" # The address of the server. The port must be the same with the port in `server.bind_addr`
 default_token = "use_a_secret_that_only_you_know"
 retry_interval = 1
+
+[client.transport] # The whole block is optional. Specify which transport to use
+type = "tcp" # Optional. Possible values: ["tcp", "tls", "noise"]. Default: "tcp"
+
+[client.transport.tcp]
+keepalive_secs = 5 # Optional. Specify `tcp_keepalive_time` in `tcp(7)`, if applicable. Default: 20 seconds
+keepalive_interval = 2 # Optional. Specify `tcp_keepalive_intvl` in `tcp(7)`, if applicable. Default: 8 seconds
 
 [client.services.palworld]
 local_addr = "127.0.0.1:8211"
