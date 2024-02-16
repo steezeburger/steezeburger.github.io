@@ -33,6 +33,18 @@
   h2 {
     margin: 15px 0;
   }
+  h3 {
+    margin: 8px 0;
+  }
+  blockquote {
+    margin: 0 0 15px 2em;
+    p {
+      border-left: 1px red solid;
+      padding: 0 5px;
+      background-color: whitesmoke;
+      display: inline-block;
+    }
+  }
   p {
     word-break: break-word;
     &:not(:last-child) {
@@ -45,6 +57,9 @@
       margin-left: 30px;
       margin-top: 8px;
       list-style: disc;
+      blockquote {
+        margin: 0px;
+      }
     }
   }
 }
