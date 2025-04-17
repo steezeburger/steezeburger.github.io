@@ -414,6 +414,18 @@ code {
 .post h2 {
   margin: 15px 0;
 }
+.post h3 {
+  margin: 8px 0;
+}
+.post blockquote {
+  margin: 0 0 15px 2em;
+}
+.post blockquote p {
+  border-left: 1px #f00 solid;
+  padding: 0 5px;
+  background-color: #f5f5f5;
+  display: inline-block;
+}
 .post p {
   word-break: break-word;
 }
@@ -427,6 +439,9 @@ code {
   margin-left: 30px;
   margin-top: 8px;
   list-style: disc;
+}
+.post ul li blockquote {
+  margin: 8px 0px;
 }
 .post-widget {
   float: right;
