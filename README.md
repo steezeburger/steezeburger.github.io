@@ -20,4 +20,4 @@
 * still from dev branch
   * `hexo clean` need to clean if you updated stylus file for example
   * `hexo generate` to generate new static files
-  * `hexo deploy` to deplo
+  * `hexo deploy` to deploy

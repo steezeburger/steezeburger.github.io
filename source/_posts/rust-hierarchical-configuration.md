@@ -11,7 +11,7 @@ tags:
 
 ## Why?
 
-I've been working with Rust lately and I recently needed to implement a program where the configuration could be set through a file, environment variables, and cli args, with the latter overriding the former.
+I've been working with Rust lately, and I recently needed to implement a program where the configuration could be set through a file, environment variables, and cli args, with the latter overriding the former.
 
 This is called a hierarchical configuration, and it is the recommended way of handling configuration in your applications.
 
@@ -87,9 +87,9 @@ struct Config {
 
 We now run into another issue. If we called the program without command line arguments specified, the `Config`'s values would be `None`. This would override the previous configuration values set by the file or environment variables with `None`! This means we are still basically forced to use command line arguments.
 
-## Final Solution
+## Solution
 
-The final solution required adding a separate struct to handle the command line arguments, along with a helper from `Serde` that skips serialization of values if they are `None`.
+The solution required adding a separate struct to handle the command line arguments, along with a helper from `Serde` that skips serialization of values if they are `None`.
 
 ```rust
 // cli.rs

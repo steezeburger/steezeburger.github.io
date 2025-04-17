@@ -21,7 +21,7 @@ tags:
 
 The biggest reason I needed to run a reverse tunnel was to get around NAT issues, but there are several benefits:
 * I wanted to run a multiplayer game server for a recently popular game called [Palworld](https://store.steampowered.com/app/1623730/Palworld/)
-* I wanted to run the Palworld server on my local, beefy gaming maching
+* I wanted to run the Palworld server on my local, beefy gaming machine
 * I had an issue with NAT at my router
   * I was not able to access my game server from within my local network using its public IP. This is a common issue with NAT, and not all routers support the feature to get around this issue. The router feature is called "NAT loopback" or "NAT hairpinning", but my xfinity router did not support it.
     * Here are some links to get a better understanding of the issue:
@@ -43,7 +43,7 @@ The biggest reason I needed to run a reverse tunnel was to get around NAT issues
     * My goal was to get a publicly accesible box up quickly. You could probably run Rathole on a Raspberry Pi, and this could be a good solution if you already have an rpi running at home and exposed publicly to the internet.
   * Rathole client running on my local machine
 
-## Final Solution
+## Solution
 
 ### Rathole Server
 * Create new droplet on Digital Ocean (DO)
